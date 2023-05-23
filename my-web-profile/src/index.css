@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'White On Black', sans-serif;                                        
+    position: relative;
+    overflow-y: hidden;
+}
+
+html::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/564x/be/50/c6/be50c606d369531ed2588c83d824d67b.jpg');
+    background-size: cover;
+    filter: blur(20px) brightness(1.4) opacity(0.8);
+    /* Ubah nilai blur sesuai kebutuhan Anda */
+    z-index: -1;
+  }
+
+  .btn-transition {
+    transition: 7s;
+  }
+
+  .card {
+    width: 410px;
+    height: 500px;
+    border-radius: 1px;
+    background: #212121;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: .4em;
+    align-self: center;
+  }
+  
+  .card p {
+    height: 200;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+    background: #777777;
+    background-image: url("https://i.ibb.co/4W2NB7m/778f7b55cef84b4961b67b48a0c7dbdd.jpg");
+    border: .1px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card p:hover {
+    flex: 8;
+  }
+  
+  .card p span{
+    min-width: 14em;
+    text-align: center;
+    /* transform: rotate(-90deg); */
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #111111;
+    letter-spacing: .1em;
+  }
+  
+  /* .card p:hover span {
+    filter: url("https://i.ibb.co/4W2NB7m/778f7b55cef84b4961b67b48a0c7dbdd.jpg")
+  } */
+
